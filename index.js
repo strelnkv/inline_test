@@ -109,3 +109,19 @@ initSwiper();
 window.addEventListener("resize", function () {
   initSwiper();
 });
+
+const animatedBox = document.querySelector(".swiper-wrapper");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animatedBox.classList.add("animate");
+        observer.unobserve(animatedBox);
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  }
+);
+observer.observe(animatedBox);

@@ -250,12 +250,13 @@ h2 {
 
     margin: 16px;
   }
-  .swiper-wrapper {
+  .animate {
     animation-name: move-x;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 4;
     animation-direction: alternate;
+    animation-fill-mode: forwards;
   }
   @keyframes move-x {
     0% {
