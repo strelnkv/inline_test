@@ -22,8 +22,6 @@ h2 {
   margin: 0 auto;
 }
 .header {
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
   padding-bottom: 1px;
   padding-top: 16px;
@@ -41,12 +39,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header__navigation {
-  display: flex;
-  justify-content: center;
-  gap: 98px;
 }
 
 .header__navigation-radio {
@@ -87,6 +79,10 @@ h2 {
 @media (max-width: 1024px) {
   .header__navigation-form {
     font-size: 15px;
+  }
+  .header__navigation {
+    justify-content: space-around;
+    gap: unset;
   }
 }
 .checked-line {
@@ -325,16 +321,44 @@ h2 {
 
 .origin__container {
   display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 1024px) {
+  .origin__container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .origin__buttons {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
 }
+@media (max-width: 1024px) {
+  .origin__buttons {
+    display: flex;
+    justify-content: normal;
+    gap: 8px;
+    margin-top: 34px;
+  }
+}
+
 .origin__btn {
   width: 184px;
   height: 40px;
   border: 1px #444444 solid;
   background-color: transparent;
   border-radius: 5px;
+}
+.origin__container-text {
+  max-width: 511px;
+}
+.origin__container-img {
+  background-image: url("/images/origin.svg");
+  background-position: center;
+  width: 376px;
+  height: 267px;
 }
