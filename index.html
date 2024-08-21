@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__navigation">
+        <div class="header__navigation-form">
+          <input
+            type="radio"
+            id="description"
+            name="section"
+            class="header__navigation-radio"
+            checked
+          />
+          <label for="description" class="header__navigation-label"
+            >Описание</label
+          >
+          <span class="description-line"></span>
+        </div>
+        <div class="header__navigation-form">
+          <input
+            type="radio"
+            id="reviews"
+            name="section"
+            class="header__navigation-radio"
+          />
+          <label for="reviews" class="header__navigation-label">Отзывы</label>
+          <span class="reviews-line"></span>
+        </div>
+
+        <div class="header__navigation-form">
+          <input
+            type="radio"
+            id="origin"
+            name="section"
+            class="header__navigation-radio"
+          />
+          <label for="origin" class="header__navigation-label">Откуда</label>
+          <span class="origin-line"></span>
+        </div>
+      </div>
+    </header>
+    <main class="main container">
+      <section id="description-section" class="section section--active">
+        <div class="section__content">
+          <p>
+            Томаты на ветке красные (помидоры) - более плотные, яркие и
+            ароматные по сравнению с обычными. Они славятся низкой калорийностью
+            и высоким содержанием витаминов, клетчатки, пектина и минеральных
+            веществ. В них содержатся также каротиноиды, кислоты и мощный
+            антиоксидант ликопин.
+          </p>
+          <p>
+            Помидор - незаменимый продукт в мировой кулинарии. Он - основа
+            многочисленных соусов, маринадов, кетчупа, испанского холодного супа
+            Гаспачо или итальянской закуски Капрезе. С ним делают салаты, его
+            тушат, солят и консервируют. Помидоры на веточке особенно красиво
+            смотрятся в запеченном виде.
+          </p>
+        </div>
+        <div class="main__product-info">
+          <div class="main__product-info__section characteristics">
+            <h2 class="main__product-info__title">Характеристики</h2>
+            <div class="main__product-info__item">
+              <span>Страна</span>
+              <span>Россия</span>
+            </div>
+            <div class="main__product-info__item">
+              <span>Поставщик</span>
+              <span>Фермеры: Наталья и Юрий Лейшан</span>
+            </div>
+            <div class="main__product-info__item">
+              <span>Тип упаковки</span>
+              <span>Крафтовый пакет</span>
+            </div>
+            <div class="main__product-info__item">
+              <span>Сертификаты качества</span>
+              <span>В наличии</span>
+            </div>
+          </div>
+
+          <div class="main__product-info__section nutrition-facts">
+            <h2 class="main__product-info__title">Пищевая ценность на 100г</h2>
+            <div class="main__product-info__item">
+              <span>Энергетическая ценность</span>
+              <span>18 кКал</span>
+            </div>
+            <div class="main__product-info__item">
+              <span>Белки</span>
+              <span>0.9 г</span>
+            </div>
+            <div class="main__product-info__item">
+              <span>Жиры</span>
+              <span>0.2 г</span>
+            </div>
+            <div class="main__product-info__item">
+              <span>Углеводы</span>
+              <span>3.9 г</span>
+            </div>
+          </div>
+
+          <div class="main__product-info__section storage-conditions">
+            <h2 class="main__product-info__title">Условия хранения</h2>
+            <div class="main__product-info__item">
+              <span>Срок хранения</span>
+              <span>7 дней</span>
+            </div>
+
+            <div class="main__product-info__item">
+              <span>Температура хранения</span>
+              <span>от 3° до 7°</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__related-products">
+          <h1>С этим товаром покупают</h1>
+          <!-- <div class="main__related-products__items"></div> -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews-section" class="section">
+        <div class="section__content">
+          <p class="reviews__p">
+            Помогите нам стать ещё лучше. Оставляя отзывы, вы таким образом
+            указываете нам на зоны роста. Мы правда, читаем все отзывы.
+          </p>
+          <button class="reviews__btn">Оставить отзыв</button>
+        </div>
+      </section>
+
+      <section id="origin-section" class="section">
+        <div class="section__content">
+          <div class="origin__container">
+            <div class="origin__container-text">
+              <p>
+                Томаты на ветке красные (помидоры) - более плотные, яркие и
+                ароматные по сравнению с обычными. Они славятся низкой
+                калорийностью и высоким содержанием витаминов, клетчатки,
+                пектина и минеральных веществ. В них содержатся также
+                каротиноиды, кислоты и мощный антиоксидант ликопин.
+              </p>
+              <p>
+                Помидор - незаменимый продукт в мировой кулинарии. Он - основа
+                многочисленных соусов, маринадов, кетчупа, испанского холодного
+                супа Гаспачо или итальянской закуски Капрезе.
+              </p>
+            </div>
+            <div class="origin__container-media">
+              <img src="/images/origin.svg" alt="Теплица" />
+              <div class="origin__buttons">
+                <button class="origin__btn">Сертификаты</button
+                ><button class="origin__btn">О поставщике</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
