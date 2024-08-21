@@ -365,7 +365,7 @@ h2 {
   max-width: 511px;
 }
 .origin__container-img {
-  background-image: url("/images/origin.svg");
+  background-image: url("../images/origin.svg");
   background-position: center;
   width: 376px;
   height: 267px;
