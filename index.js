@@ -51,7 +51,6 @@ const data = [
   },
 ];
 
-// const container = document.querySelector(".main__related-products__items");
 const swiperWrapper = document.querySelector(".swiper-wrapper");
 
 data.forEach((item) => {
@@ -99,22 +98,14 @@ function initSwiper() {
     swiper = new Swiper(".mySwiper", {
       slidesPerView: "auto",
       spaceBetween: 16,
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true,
-      // },
     });
   } else if (swiper) {
-    // Уничтожение Swiper если был инициализирован и размер окна больше 1024px
     swiper.destroy(true, true);
     swiper = undefined;
   }
 }
 
-// Инициализация при загрузке страницы
 initSwiper();
-
-// Слушатель на изменение размера окна
 window.addEventListener("resize", function () {
   initSwiper();
 });
